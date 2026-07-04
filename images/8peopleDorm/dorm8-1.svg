@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Placeholder image: 8-Bed Dorm — Wide">
+  <defs>
+    <linearGradient id="g24" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2E2015"/>
+      <stop offset="100%" stop-color="#CB7C55"/>
+    </linearGradient>
+    <radialGradient id="g24v" cx="50%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.10)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0.18)"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g24)"/>
+  <rect width="1200" height="900" fill="url(#g24v)"/>
+  <circle cx="144" cy="765" r="192" fill="rgba(255,255,255,0.06)"/>
+  <circle cx="1104" cy="108" r="120" fill="rgba(255,255,255,0.07)"/>
+  <g opacity="0.85" transform="translate(600.0,410.0)">
+  <circle r="34" fill="rgba(255,255,255,0.14)"/>
+  <path d="M-16,-8 h8l3,-5h10l3,5h8a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-32a2 2 0 0 1-2-2v-16a2 2 0 0 1 2-2z" fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="0" cy="2" r="6" fill="none" stroke="#ffffff" stroke-width="2"/>
+</g>
+  <text x="50%" y="480" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="29" font-weight="600" fill="#ffffff" opacity="0.95">8-Bed Dorm — Wide</text>
+  <text x="50%" y="510" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#ffffff" opacity="0.65">Closca Hostel Koh Tao &#183; images/8peopleDorm/ &#183; 1200&#215;900</text>
+</svg>
