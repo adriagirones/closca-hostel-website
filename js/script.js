@@ -116,13 +116,19 @@
 
   /* ---------- Promotion modal ---------- */
   const promoModal = document.getElementById('promo-modal');
-  if (promoModal) {
+  const PROMO_COOKIE = 'promo_dismissed';
+  const hasSeenPromo = document.cookie.split('; ').includes(`${PROMO_COOKIE}=1`);
+  if (promoModal && !hasSeenPromo) {
     promoModal.hidden = false;
+    const closePromo = () => {
+      promoModal.hidden = true;
+      document.cookie = `${PROMO_COOKIE}=1; max-age=31536000; path=/`;
+    };
     promoModal.querySelectorAll('[data-promo-close]').forEach((el) => {
-      el.addEventListener('click', () => { promoModal.hidden = true; });
+      el.addEventListener('click', closePromo);
     });
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') promoModal.hidden = true;
+      if (e.key === 'Escape') closePromo();
     });
   }
 })();
