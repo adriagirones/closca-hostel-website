@@ -113,4 +113,16 @@
   /* ---------- Footer year ---------- */
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* ---------- Promotion modal ---------- */
+  const promoModal = document.getElementById('promo-modal');
+  if (promoModal) {
+    promoModal.hidden = false;
+    promoModal.querySelectorAll('[data-promo-close]').forEach((el) => {
+      el.addEventListener('click', () => { promoModal.hidden = true; });
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') promoModal.hidden = true;
+    });
+  }
 })();
