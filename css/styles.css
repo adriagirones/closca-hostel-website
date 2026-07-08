@@ -231,10 +231,17 @@ section { padding-block: var(--section-pad); }
 .logo-text { color: var(--espresso-900); }
 .logo-text em { font-style: normal; color: var(--terracotta-500); font-weight: 500; }
 
-.site-header:not(.scrolled) .logo-text { color: var(--white); }
-.site-header:not(.scrolled) .main-nav a { color: rgba(255,255,255,0.92); }
-.site-header:not(.scrolled) .btn-ghost { color: var(--white); border-color: rgba(255,255,255,0.5); }
-.site-header:not(.scrolled) .nav-toggle span { background: var(--white); }
+.site-header:not(.scrolled):not(.no-hero) .logo-text { color: var(--white); }
+.site-header:not(.scrolled):not(.no-hero) .main-nav a { color: rgba(255,255,255,0.92); }
+.site-header:not(.scrolled):not(.no-hero) .btn-ghost { color: var(--white); border-color: rgba(255,255,255,0.5); }
+.site-header:not(.scrolled):not(.no-hero) .nav-toggle span { background: var(--white); }
+
+/* Pages without a full-bleed hero behind the header (e.g. rooms.html) */
+.site-header.no-hero {
+  background: rgba(251, 248, 242, 0.85);
+  backdrop-filter: blur(14px);
+  box-shadow: var(--shadow-sm);
+}
 
 .main-nav ul { display: flex; gap: 2rem; }
 .main-nav a {
